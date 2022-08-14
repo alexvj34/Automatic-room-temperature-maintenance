@@ -1,0 +1,43 @@
+﻿define GasSensor -1252983604
+define WallHeater 24258244
+define WallCooler -739292323
+define disp -815193061 # small display
+define disp2 -53151617 # medium display
+define disp3 -1949054743 # big display
+
+alias GasSensor d0
+alias WallHeater d1
+alias WallCooler d2
+alias disp d3 #display port
+
+alias on r0
+move on 1
+
+alias off r4
+move off 0
+
+#r1 Temperature
+temp:# Formula Kelvin to C
+l r1 d0 Temperature
+sub r1 r1 273
+s d3 Setting r1
+blt r1 20 hot # temp On Heater
+bgt r1 30 cold # temp On Cooler
+bgt r1 23 alloff # temp Turn Off all
+yield
+j temp
+
+hot:
+s d1 On on
+s d2 On off
+j temp
+
+cold:
+s d2 On on
+s d1 On off
+j temp
+
+alloff:
+s d1 On off
+s d2 On off
+j temp
