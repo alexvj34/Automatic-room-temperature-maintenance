@@ -1,11 +1,11 @@
-﻿define GasSensor -1252983604
+﻿define Sensor -1252983604
 define WallHeater 24258244
 define WallCooler -739292323
 define disp -815193061 # small display
 define disp2 -53151617 # medium display
 define disp3 -1949054743 # big display
 
-alias GasSensor d0
+alias Sensor d0
 alias WallHeater d1
 alias WallCooler d2
 alias disp d3 #display port
