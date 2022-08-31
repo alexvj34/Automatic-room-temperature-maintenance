@@ -14,7 +14,7 @@ ____
 - d2 is a gas air cooler
 - d3 - This is a display
 These things need to be selected on the socket
-
+____
 - Line 23 - number 20 - indicates the temperature when the heater should turn on
 - Line 24 - number 30 - indicates the temperature when cooling should turn on
 - Line 25 - number 23 - indicates when everything should be turned off
