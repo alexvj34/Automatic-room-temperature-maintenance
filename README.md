@@ -18,4 +18,4 @@ These things need to be selected on the socket
 - Line 23 - number 20 - indicates the temperature when the heater should turn on
 - Line 24 - number 30 - indicates the temperature when cooling should turn on
 - Line 25 - number 23 - indicates when everything should be turned off
-// Important! In this case, the temperatures are in degrees Celsius! The code already contains the conversion formula from Kelvin to Celsius
+> Important! In this case, the temperatures are in degrees Celsius! The code already contains the conversion formula from Kelvin to Celsius
