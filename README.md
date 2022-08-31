@@ -9,10 +9,10 @@ Computer 200 W (But it can be turned off and you don't need to keep it on all th
 Heater 5 - 1000 W (it all depends on the load)
 Gas air cooler 100W
 
-d0 - This is a sensor
-d1 - This is a heater
-d2 is a gas air cooler
-d3 - This is a display
+- d0 - This is a sensor
+- d1 - This is a heater
+- d2 is a gas air cooler
+- d3 - This is a display
 These things need to be selected on the socket
 
 Line 23 - number 20 - indicates the temperature when the heater should turn on
